@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- add the cdn for tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-DkRLBgvmfB5EZ+tg33Hyf5vkIMVyjxRknTpdGzB2Smp+na1BbpUHv+ek5G0f5D/OZD5cEy8D5sfa69KC5DlB3A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<style>
+    /* Add the custom css for the nav bar */
+    .NavigationBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: lightslategrey;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        z-index: 9999;
+        /* Ensure navbar is on top */
+    }
+    .leftSide {
+        width: 40%;
+        margin-top: 210px;
+        margin-left: auto;
+    }
+    .bg-image {
+        background-image: url('./imges/backgroud.jpg');
+        background-size: cover;
+        padding: 80px;
+        background-position: center;
+    }
+</style>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js"></script>
+
+<body>
+
+    <section>
+        <!-- nav bar section with the tailwind css -->
+        <nav class="NavigationBar">
+            <div>
+                <img src="./imges/logo.png.webp" alt="">
+            </div>
+            <div>
+                <div class="text-sm lg:flex-grow">
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  hover:underline mr-4 transition duration-300 ease-in-out hover:text-teal-500">
+                        Home
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  mr-4  hover:underline transition duration-300 ease-in-out hover:text-teal-500">
+                        About
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  mr-4 hover:underline transition duration-300 ease-in-out hover:text-teal-500">
+                        Doctors
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  mr-4  hover:underline transition duration-300 ease-in-out hover:text-teal-500">
+                        Pages
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  mr-4  hover:underline transition duration-300 ease-in-out hover:text-teal-500">
+                        Services
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  mr-4  hover:underline transition duration-300 ease-in-out hover:text-teal-500">
+                        Departments
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-200  mr-4  hover:underline transition duration-300 ease-in-out hover:text-teal-500">
+                        Elements
+                    </a>
+                </div>
+            </div>
+            <div class="flex space-x-4"> <!-- Added space-x-4 class for horizontal spacing -->
+                <a href="#"
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent mt-4 lg:mt-0">Sign
+                    Up</a>
+                <a href="#"
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent  mt-4 lg:mt-0">Sign
+                    In</a>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <!-- add the wave in the image and top right colore  -->
+        <div class="flex mt-40 space-x-4">
+            <div class="leftSide">
+                <p class="text-lg font-semibold text-teal-600 mb-2">We Are Here For Your Care</p>
+                <h1 class="text-7xl italic font-bold text-teal-800 mb-4">Best Care & Better Doctor</h1>
+                <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.Risus
+                    cmodo viverra</p>
+                <button class="w-1/2 ml-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 ">
+                    Make an Appointment
+                </button>
+            </div>
+            <!-- Add the image in the right side -->
+            <div class="w-1/2 relative">
+                <div class="absolute top-0 left-0 w-full h-full">
+                    <img src="./imges/banner_img.png.webp" alt="" class="w-full h-full ">
+                </div>
+            </div>
+        </div>
+        <!-- Our services -->
+        <h1 class="text-5xl  font-bold text-center mt-60">Our Services</h1>
+
+        <div class="flex  items-center ">
+            <div class="flex flex-col ml-40">
+                <div class="w-2/3 mb-20">
+                    <div class="flex space-x-10 ">
+                        <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_1.svg" alt=""
+                            class="rounded-full h-12 px-2 py-2 bg-gray-200 h-12 px-2 py-2" />
+                        <p>Better Future</p>
+                    </div>
+                    <div class="mt-2 text-gray-400">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+                <div class="w-2/3 mb-20">
+                    <div class="flex space-x-10">
+                        <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_2.svg" alt=""
+                            class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        <p>Qualified Doctors</p>
+                    </div>
+                    <div class="mt-2 text-gray-400">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+            </div>
+            <div class="text-center w-full ">
+                <img src="./imges/service.png.webp" />
+            </div>
+            <div class="flex flex-col">
+                <div class="w-2/3 mb-20">
+                    <div class="flex space-x-10">
+                        <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_1.svg" alt=""
+                            class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        <p>Better Future</p>
+                    </div>
+                    <div class="mt-2 text-gray-400">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+                <div class="w-2/3 mb-20">
+                    <div class="flex space-x-10">
+                        <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_2.svg" alt=""
+                            class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        <p>Qualified Doctors</p>
+                    </div>
+                    <div class="mt-2 text-gray-400 ">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our  departnes -->
+        <h1 class="text-5xl  font-bold text-center mt-60">Our Departments</h1>
+        <div class="bg-image  flex center justify-center">
+            <div class=" center grid grid-cols-2 flex-wrap gap-4 w-2/3  justify-center items-center">
+                <div
+                    class="text-gray-500 border-2 rounded col-span-1 text-center py-14 relative transition duration-500 ease-in-out transform hover:text-white hover:scale-105 hover:bg-blue-600">
+                    <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_2.svg" alt=""
+                        class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition duration-500 ease-in-out transform hover:scale-110" />
+                    <h2 class="text-2xl font-bold w-full">Better Future</h2>
+                    <div class="mt-4">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+                <div
+                    class="text-gray-500 border-2 rounded col-span-1 text-center py-14 relative transition duration-500 ease-in-out transform hover:text-white hover:scale-105 hover:bg-blue-600">
+                    <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_2.svg" alt=""
+                        class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition duration-500 ease-in-out transform hover:scale-110" />
+                    <h2 class="text-2xl font-bold w-full">Better Future</h2>
+                    <div class="mt-4">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+                <div
+                    class=" text-gray-500 border-2 rounded col-span-1 text-center py-14 mt-10 relative transition duration-500 ease-in-out transform hover:text-white hover:scale-105 hover:bg-blue-600">
+                    <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_2.svg" alt=""
+                        class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition duration-500 ease-in-out transform hover:scale-110" />
+                    <h2 class="text-2xl font-bold w-full">Better Future</h2>
+                    <div class="mt-4">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+                <div
+                    class="text-gray-500 border-2 border-red rounded col-span-1 text-center py-14 mt-10 relative transition duration-500 ease-in-out transform hover:text-white hover:scale-105 hover:bg-blue-600">
+                    <img src="https://preview.colorlib.com/theme/medico/img/icon/feature_2.svg" alt=""
+                        class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition duration-500 ease-in-out transform hover:scale-110" />
+                    <h2 class="text-2xl font-bold w-full">Better Future</h2>
+                    <div class="mt-4">
+                        Darkness multiply rule Which from without life creature blessed give moveth moveth seas make day
+                        which divided our have.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Experienced Doctors
+Face Replenish Sea Good Winged Bearing Years Air Divide WasHave Night Male Also -->
+
+        <h1 class="text-5xl  font-bold text-center mt-60">Experienced Doctors</h1>
+        <p class="text-center text-gray-500 mt-4">Face Replenish Sea Good Winged Bearing Years Air Divide WasHave Night
+        </p>
+        <div class="flex justify-center mt-20">
+            <div class="grid grid-cols-4  gap-6 items-center">
+                <div class="col-span-1 hover:text-blue-400 transition transform ease-in-out duration-500">
+                    <div class="">
+                        <img src="https://preview.colorlib.com/theme/medico/img/doctor/doctor_2.png.webp" alt="" />
+                    </div>
+                    <p class="text-gray-500">Cardiologist</p>
+                    <h2 class="text-2xl font-bold mt-2">Dr. Alex Smith</h2>
+                    <div class="flex space-x-4 mt-2">
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/f" alt="Facebook" class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Instagram Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/i.jpg" alt="Instagram"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Twitter Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/t.png" alt="Twitter"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-1 hover:text-blue-400 transition transform ease-in-out duration-500 ">
+                    <div class="">
+                        <img src="https://preview.colorlib.com/theme/medico/img/doctor/doctor_2.png.webp" alt=""
+                            class="" />
+                    </div>
+                    <p class="text-gray-500">Cardiologist</p>
+                    <h2 class="text-2xl font-bold  mt-2">Dr. Alex Smith</h2>
+                    <div class="flex space-x-4 mt-2">
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/f" alt="Facebook" class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Instagram Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/i.jpg" alt="Instagram"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Twitter Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/t.png" alt="Twitter"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-1 hover:text-blue-400 transition transform ease-in-out duration-500">
+                    <div class="">
+                        <img src="https://preview.colorlib.com/theme/medico/img/doctor/doctor_3.png.webp" alt=""
+                            class="" />
+                    </div>
+                    <p class="text-gray-500 ">Cardiologist</p>
+                    <h2 class="text-2xl font-bold  mt-2">Dr. Alex Smith</h2>
+                    <div class="flex space-x-4 mt-2">
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/f" alt="Facebook" class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Instagram Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/i.jpg" alt="Instagram"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Twitter Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/t.png" alt="Twitter"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-span-1 hover:text-blue-400 transition transform ease-in-out duration-500">
+                    <div class="">
+                        <img src="https://preview.colorlib.com/theme/medico/img/doctor/doctor_4.png.webp" alt=""
+                            class="" />
+                    </div>
+                    <p class="text-gray-500 ">Cardiologist</p>
+                    <h2 class="text-2xl font-bold  mt-2">Dr. Alex Smith</h2>
+                    <div class="flex space-x-4 mt-2">
+                        <!-- Facebook Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/f" alt="Facebook" class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Instagram Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/i.jpg" alt="Instagram"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                        <!-- Twitter Link -->
+                        <a href="#"
+                            class="cursor-pointer relative transition duration-500 ease-in-out transform hover:text-white hover:scale-110">
+                            <img src="./imges/t.png" alt="Twitter"
+                                class="rounded-full h-10 bg-gray-200 h-12 px-2 py-2" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <h1 class="text-5xl  font-bold text-center mt-60">Testimonials</h1>
+
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
